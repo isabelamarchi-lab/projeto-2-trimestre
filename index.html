@@ -51,7 +51,7 @@
             <div>
                 <h2>Meu segundo post</h2>
                 <p class="artigo-autor">Por: isabela marchi</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar curiosidades de filmes de fantasia.</p>
+                <p>os filmes de fantasia surgiram no início da era do cinema mudo do século xx com obras pioneiras como o ladão de bagdá onde misturava magia e mundos exóticos.</p>
                 
                 <button>❤️ <span>0</span></button>
                 <button>👍 <span>0</span></button>
@@ -59,6 +59,37 @@
         </article>
     </main>
 
+     <article>
+            <img src="imagem-blog.png"
+                alt="Logotipo conceitual do filme: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div>
+                <h2>Meu terceiro post</h2>
+                <p class="artigo-autor">Por: isabela marchi</p>
+                <p>harry potter e a pedra filosofal(2001)é o filme de fantasia mais famoso pelo mundo inteiro.
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+
+
+</script>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
 
     <script src="script"></script>
 </body>
